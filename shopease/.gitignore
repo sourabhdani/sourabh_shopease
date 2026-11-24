@@ -1,0 +1,10 @@
+# Secrets: never commit these
+.telegram.env
+*.env
+*.pem
+id_ed25519*
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp

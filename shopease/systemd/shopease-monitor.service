@@ -1,0 +1,14 @@
+[Unit]
+Description=ShopEase Server Resource Monitoring
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=devops1
+Group=devops1
+
+ExecStart=/bin/bash /opt/shopease/scripts/resource-alert.sh
+
+StandardOutput=journal
+StandardError=journal

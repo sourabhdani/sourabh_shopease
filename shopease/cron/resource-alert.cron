@@ -1,0 +1,4 @@
+# Add this line with:  crontab -e   (as devops1)
+# Runs the ShopEase resource monitor every 15 minutes.
+# Use this OR the systemd timer in ../systemd, never both.
+*/15 * * * * /opt/shopease/scripts/resource-alert.sh >> /opt/shopease/logs/resource-alert.log 2>&1
